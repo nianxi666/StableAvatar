@@ -1,7 +1,7 @@
 export TOKENIZERS_PARALLELISM=false
 export MODEL_NAME="path/StableAvatar/checkpoints/Wan2.1-Fun-V1.1-1.3B-InP"
 
-CUDA_VISIBLE_DEVICES=0 python inference.py \
+CUDA_VISIBLE_DEVICES=0 python3 inference.py \
   --config_path="deepspeed_config/wan2.1/wan_civitai.yaml" \
   --pretrained_model_name_or_path=$MODEL_NAME \
   --transformer_path="path/StableAvatar/checkpoints/StableAvatar-1.3B/transformer3d-square.pt" \
