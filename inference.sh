@@ -1,5 +1,5 @@
 export TOKENIZERS_PARALLELISM=false
-export MODEL_NAME="path/StableAvatar/checkpoints/Wan2.1-Fun-V1.1-1.3B-InP"
+export MODEL_NAME="checkpoints/Wan2.1-Fun-V1.1-1.3B-InP"
 
 CUDA_VISIBLE_DEVICES=0 python3 inference.py \
   --config_path="deepspeed_config/wan2.1/wan_civitai.yaml" \
